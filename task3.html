@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3</title>
+    <style>
+        .blink {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #button{
+            font-size: larger;
+            background-color: lightblue;
+            border: 1px solid;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #button:hover{
+            animation-name: colorchange;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes colorchange {
+            0%{
+                background-color: pink;
+                border: 1px solid;
+                box-shadow: 5px lightblue;
+            }
+            25%{
+                background-color: palegoldenrod;
+                border: 1px solid;
+                box-shadow: 5px lightblue;
+            }
+            50%{
+                background-color: palegreen;
+                border: 1px solid;
+                box-shadow: 5px lightblue;
+            }
+            75%{
+                background-color: palevioletred;
+                border: 1px solid;
+                box-shadow: 5px lightblue;
+            }
+            100%{
+                background-color: paleturquoise;
+                border: 1px solid;
+                box-shadow: 5px lightblue;
+            }
+
+            
+        }
+    </style>
+</head>
+<body>
+    <span class = "blink">
+        <button id="button"> Hover to blink!</button>
+    </span>
+    
+</body>
+</html>

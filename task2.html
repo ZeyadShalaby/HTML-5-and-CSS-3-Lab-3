@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        
+
+        
+
+        input:valid{
+            border: 3px solid green;
+            
+        }
+
+        input:valid + label{
+            display: none;
+        }
+
+        
+
+        input:invalid{
+            border: 3px solid red;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <h2>Change Email Address</h2>
+
+    <form action="" method="GET">
+
+        <div>
+            <input required name="username" type="text" placeholder="Username" id="username" class="box"> 
+            <br>
+            <label for = "email"> The required username can only be a series of alphabetical characters</label>
+
+        </div>
+
+        <div>
+            <input required name="email" type="email" placeholder="Email" id="email" class="box">
+             <br>
+             <label for ="email"> The required username can only be an email</label>
+        </div> 
+
+        <div>
+            <input type="submit" value="Change" style="border: 1px solid black" > 
+
+        </div>
+       
+        
+
+    </form>
+
+   
+
+</body>
+</html>
